@@ -5,66 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOMADORA DE NUMEROS TESTE</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            font: normal 18pt Arial;
-            align-items: center;
-            background: rgb(2,0,36);
-            background: linear-gradient(80deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 20%, rgba(0,212,255,1) 100%);
-            height: 97vh;
-            justify-content: center;     
-        }
-        input{
-            width: 90px;
-            height: 30px;
-            box-shadow: 5px 5px 5px black;
-            border: none; 
-            margin: 7px;
-            font: normal 18px;
-        }
-        div#res{
-            margin: 2px;
-            background-color: white;
-            width: 200px;
-            height: 35px;
-            box-shadow: 5px 5px 5px black;
-        }
-        div#borda{
-            border:solid 0px;
-            border-radius:10px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            font: normal 18pt Arial;
-            align-items: center;
-            justify-content: center;
-            background-color:#4A45D9;
-            box-shadow: 5px 5px 5px black; 
-            height: 350px;
-        }
-        footer{
-            margin: 20px;
-        }
-        h1{
-            color: rgb(255, 255, 255); text-shadow: black 0.1em 0.1em 0.1em
-        }
-        .botão{
-            margin-top: 15px;
-            margin-bottom: 20px;
-            color:blue;
-            box-shadow: 0 0 40px 40px #6d7fdb inset;
-            -webkit-transition: all 150ms ease-in-out;
-            transition: all 150ms ease-in-out;
-            width: 100px;
-            height: 35px;
-            font: normal 20px arial;
-            border: none;
-        }
-        .botão:hover {
-            box-shadow: 0 0 10px 0 #100dbb inset, 0 0 10px 4px #062579;
-        }
+
     </style>
 </head>
 <body>
@@ -80,17 +23,6 @@
         <div id="res"></div>
     </div> 
     <footer>copyright:©Felipe</footer>
-    <script>
-        function somar(){
-            var tn1 = window.document.getElementById('num1')
-            var tn2 = window.document.getElementById('num2')
-            var botão = window.document.getElementsByClassName('botão')
-            var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)  
-            var s = n1 + n2
-            res.innerHTML = `${n1} + ${n2} = ${s}`
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
